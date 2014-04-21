@@ -14,7 +14,7 @@ var app = (function(){
     , horizontalLineEnd = {}
     , verticalHelper    = {}
     , horizontalHelper  = {}
-    , currentAngle      = 45
+    , currentAngle      = 0
     , angleIncrement    = 3
     , box         = {}
     , hSineTop    = [] 
@@ -259,6 +259,7 @@ var app = (function(){
   a.showAngle = function (){
     console.log('angle', currentAngle);
   }
+  
   a.next = function () {
     draw();
   }
